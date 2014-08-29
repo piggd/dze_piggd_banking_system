@@ -5,18 +5,21 @@ Dontaions Accepted via paypal to danpigg@yahoo.com
 
 WARNING ** THIS REPLACES THE HUMANITY SYSTEM
 
+
 Mod Features:
-Allows the player to have access to there money all the time.
-Bank is tied to the player via the humanity system and survices character death.
-Auto Deposit bars/breif cases on every sale or purchase
-Player can access balance, deposit and withdrawl via player tool menu.
+Allows the player to have access to their money all the time.
+Bank is tied to the player via the humanity system and survives character death.
+Auto Deposit bars/brief cases on every sale or purchase
+Player can access balance, deposit and withdraw via player tool menu.
 If a player goes to a negative balance displaying the balance, withdraw or deposit will restore them to zero balance.
+
 
 Known Issues:
 First time character creation start the player with 2500 humanity which equates to 25gb.
 Any event that modifies humanity will effect the bank balance (usally in a minor way silve bars in most cases)
+ 
 
-1.   Download the addon from my github by clicking on this link.   (Conatins a vanilla epoch chernarus mission.pbo example file).
+1.   Download the addon from my github by clicking on this link.   (Contains a vanilla epoch chernarus mission.pbo example file).
 
 2.  On the lower left corner click on the button "Download Zip"
 3   Create a directory called dayz_code and mission_pbo
@@ -29,6 +32,8 @@ Any event that modifies humanity will effect the bank balance (usally in a minor
     copy dayz_code/init/compiles.sqf  mission_pbo/fixes/compules.sqf
 10.  Copy dayz_code/compile/epoch_returnChange.sqf mission_pbo/fixes/epoch_returnChange.sqf
 11.  Edit your init.sqf file and make the following modifications:
+
+ 
 
 from:
 
@@ -72,6 +77,8 @@ to:
 };
 
 12.  Edit your fixes\compiles.sqf file and make the following modifications:
+
+ 
 
 From:
 
@@ -152,6 +159,8 @@ epoch_totalCurrency = {
 
 13. Edit fixes/epoch_returnChange.sqf
 
+ 
+
 From:
 
     //diag_log format["DEBUG TRADER CHANGE: %1", _return_change];
@@ -186,7 +195,7 @@ _successful
 
 to:
 
-
+ 
     if (_silver_1oz > 0) then {
             if (_silver_1oz == 1) then {
                 player addMagazine "ItemSilverBar";
@@ -211,6 +220,8 @@ to:
 _successful
 
 14. Edit server_traders.sqf
+
+ 
 
 From:
 
