@@ -59,7 +59,6 @@ menu_GUE_Soldier_MG = [
 //	"hostile"
 	"neutral"
 // ------------------------------------------------------------------------DZE Piggd Banking System End ------------------------------------------------------------------------
-
 ];
 // Aircraft Dealer
 menu_Worker2 = [
