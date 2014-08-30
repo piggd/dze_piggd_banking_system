@@ -10,6 +10,7 @@ http://epochmod.com/forum/index.php?/topic/7501-release-epoch-admin-tools-v182/
 Sleep 5;
 private["_veh", "_idx"];
 _idx = -1;
+toolsAreActive=true;
 
 while {alive player} do
 {
