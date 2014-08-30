@@ -10,11 +10,11 @@ http://epochmod.com/forum/index.php?/topic/7501-release-epoch-admin-tools-v182/
 Sleep 5;
 private["_veh", "_idx"];
 _idx = -1;
-toolsAreActive=true;
+PlayerToolsAreActive=true;
 
 while {alive player} do
 {
-	if(toolsAreActive) then
+	if(PlayerToolsAreActive) then
 	{
 		if (_idx == -1) then
 		{

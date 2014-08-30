@@ -13,7 +13,7 @@ _idx = -1;
 
 while {alive player} do
 {
-	if(toolsAreActive) then
+	if(PlayerToolsAreActive) then
 	{
 		if (_idx == -1) then
 		{
