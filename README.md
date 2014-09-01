@@ -2,17 +2,14 @@ DZE Piggd Banking System
 Email: dayzpiggd@gmail.com
 Website: http://dayzpiggd.enjin.com
 Dontaions Accepted via paypal to danpigg@yahoo.com
-
 WARNING ** THIS REPLACES THE HUMANITY SYSTEM
-
-
+ 
 Mod Features:
 Allows the player to have access to their money all the time.
 Bank is tied to the player via the humanity system and survives character death.
 Auto Deposit bars/brief cases on every sale or purchase
 Player can access balance, deposit and withdraw via player tool menu.
 If a player goes to a negative balance displaying the balance, withdraw or deposit will restore them to zero balance.
-
 
 Known Issues:
 First time character creation start the player with 2500 humanity which equates to 25gb.
@@ -64,6 +61,8 @@ From:
     //[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
    
 };
+
+** NOTE - If you are using Chameleon Skin Changer this entry will already exist with a different comment.
 
 to:
 
@@ -259,6 +258,44 @@ menu_GUE_Soldier_MG = [
 //    "hostile"
     "neutral"
 // ------------------------------------------------------------------------DZE Piggd Banking System End ------------------------------------------------------------------------
+];
+
+15.  Repack your mission pbo and upload to your sever.
+
+ 
+
+Optional Additional Configuration:
+
+ 
+
+**  Chameleon Skin Changer
+
+If you are using Chameleon Skin Changer and have replaced custom/playertools/player_tools_main.sqf you will need to uncomment the following lines.
+
+ 
+
+from:
+
+playermenustart = [
+    ["",true],
+//    ["Chameleon Male Skins Menu",[],"", -5,[["expression",format[_EXECscript1,_pathtochameleon + "male_dialog.sqf"]]],"1","1"],
+//    ["Chameleon Female Skins Menu",[],"", -5,[["expression",format[_EXECscript1,_pathtochameleon + "female_dialog.sqf"]]],"1","1"],
+    ["DZE Piggd Banking System >>", [], "#USER:bankmenu", -5, [["expression", ""]], "1", "1"],            
+//    ["Weather/Time Menu (Local Only) >>", [], "#USER:WTMenu", -5, [["expression", ""]], "1", "1"],            
+    ["", [], "", -5, [["expression", ""]], "1", "0"],
+    ["Main Menu", [20], "#USER:playermenustart", -5, [["expression", ""]], "1", "1"]        
+];
+
+to:
+
+playermenustart = [
+    ["",true],
+    ["Chameleon Male Skins Menu",[],"", -5,[["expression",format[_EXECscript1,_pathtochameleon + "male_dialog.sqf"]]],"1","1"],
+    ["Chameleon Female Skins Menu",[],"", -5,[["expression",format[_EXECscript1,_pathtochameleon + "female_dialog.sqf"]]],"1","1"],
+    ["DZE Piggd Banking System >>", [], "#USER:bankmenu", -5, [["expression", ""]], "1", "1"],            
+//    ["Weather/Time Menu (Local Only) >>", [], "#USER:WTMenu", -5, [["expression", ""]], "1", "1"],            
+    ["", [], "", -5, [["expression", ""]], "1", "0"],
+    ["Main Menu", [20], "#USER:playermenustart", -5, [["expression", ""]], "1", "1"]        
 ];
 
 15.  Repack your mission pbo and upload to your sever.
