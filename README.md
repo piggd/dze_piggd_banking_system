@@ -28,7 +28,7 @@ Any event that modifies humanity will effect the bank balance (usally in a minor
 6.  Copy C:\Program Files (x86)\Steam\SteamApps\common\ARMA 2 Operation Arrowhead\@DayZ_Epoch\addons\dayz_code.pbo into this new direttory (path may vary based on steam installation).
 7.  Extract the dayz_code.pbo into the dayz_code directory you created.
 8.  if you do not already have a fixes directory create one.
-9.  If you have do not all ready have a custom compile then follow these steps other wise you can skip this step.
+9.  If you do not already have a custom compile then follow these steps other wise you can skip this step.
     copy dayz_code/init/compiles.sqf  mission_pbo/fixes/compules.sqf
 10.  Copy dayz_code/compile/epoch_returnChange.sqf mission_pbo/fixes/epoch_returnChange.sqf
 11.  Edit your init.sqf file and make the following modifications:
