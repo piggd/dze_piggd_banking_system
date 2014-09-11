@@ -23,6 +23,7 @@ while {alive _DZE_MenuPlayer} do
 		if (_veh != vehicle player) then {
 			_veh removeAction _idx;
 			_idx = -1;      
+			_DZE_MenuPlayer = player;
 		};
 	};
 	Sleep 5;
@@ -35,4 +36,5 @@ while {alive _DZE_MenuPlayer} do
 if (_idx != -1) then {
 	_veh removeAction _idx;
 	_idx = -1;
+	_DZE_MenuPlayer = player;
 };
