@@ -2,7 +2,7 @@
 Epoch Player Tools by piggd
 Email: dayzpiggd@gmail.com
 Website: http://dayzpiggd.enjin.com
-Dontaions Accepted via paypal to danpigg@yahoo.com
+Donations Accepted via paypal to danpigg@yahoo.com
 
 Menu code and some functions from Epoch Admin Tools V1.8.2 by NoxSicarius
 http://epochmod.com/forum/index.php?/topic/7501-release-epoch-admin-tools-v182/

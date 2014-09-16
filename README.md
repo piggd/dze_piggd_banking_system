@@ -1,7 +1,7 @@
 DZE Piggd Banking System
 Email: dayzpiggd@gmail.com
 Website: http://dayzpiggd.enjin.com
-Dontaions Accepted via paypal to danpigg@yahoo.com
+Donations Accepted via paypal to danpigg@yahoo.com
 WARNING ** THIS REPLACES THE HUMANITY SYSTEM
  
 Mod Features:

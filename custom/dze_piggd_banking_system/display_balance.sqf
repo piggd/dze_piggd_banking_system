@@ -2,7 +2,7 @@
 DZE Piggd Banking System
 Email: dayzpiggd@gmail.com
 Website: http://dayzpiggd.enjin.com
-Dontaions Accepted via paypal to danpigg@yahoo.com
+Donations Accepted via paypal to danpigg@yahoo.com
 */
 private ["_balance","_briefcase_100oz","_gold_1oz","_silver_1oz"];
 _balance = player getVariable["humanity", 0];
